@@ -15,6 +15,9 @@ func getNumbers(num int, num1 int) (int, int) {
 	mul := num * num1
 	return sum, mul
 }
+func printSomething() {
+
+}
 func main() {
 	// sum(10, 20)
 	// res := add(2, 4)
