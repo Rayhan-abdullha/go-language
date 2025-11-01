@@ -19,9 +19,9 @@ func main() {
 	}
 
 	fmt.Print(mathLib.C)
-	printNmber(100)
+	printNumber(100)
 }
 
-func printNmber(num int) {
+func printNumber(num int) {
 	fmt.Println(num)
 }
