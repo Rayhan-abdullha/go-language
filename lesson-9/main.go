@@ -51,4 +51,34 @@ func main() {
 				}
 			}
 	*/
+
+	// type Address struct {
+	// 	dist     string
+	// 	division string
+	// }
+	// type User struct {
+	// 	name    string
+	// 	age     int
+	// 	email   string
+	// 	address Address
+	// }
+	// var user1 = User{
+	// 	name:  "John",
+	// 	age:   30,
+	// 	email: "john@gmail.com",
+	// 	address: Address{
+	// 		dist:     "Dhaka",
+	// 		division: "Dhaka",
+	// 	},
+	// }
+	// fmt.Println(user1)
+	// sum := func(nums ...int) int {
+	// 	total := 0
+	// 	for _, v := range nums {
+	// 		total += v
+	// 	}
+	// 	return total
+	// }
+	// res := sum(1, 2, 3, 4, 5)
+	// println(res)
 }
