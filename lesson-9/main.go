@@ -1,5 +1,10 @@
 package main
 
+func calculator(a int, b int) (mul int, div int) {
+	mul = a * b
+	div = a / b
+	return
+}
 func main() {
 	// arr := [5]int{5, 2, 9, 44, 8}
 	// for i := range len(arr) {
@@ -81,4 +86,8 @@ func main() {
 	// }
 	// res := sum(1, 2, 3, 4, 5)
 	// println(res)
+
+	m, d := calculator(10, 2)
+	println("Multiplication: ", m)
+	println("Division: ", d)
 }
