@@ -54,4 +54,42 @@ func main() {
 	// userClone := &user
 	// userClone.name = "Changed"
 	// println(user.name)
+
+	bankSystem()
+
+}
+
+func bankSystem() {
+	type Account struct {
+		accountNumber string
+		balance       float64
+	}
+	var createAccount = func(accountNumber string, initialBalance float64) *Account {
+		return &Account{
+			accountNumber: accountNumber,
+			balance:       initialBalance,
+		}
+	}
+
+	var deposit = func(acc *Account, amount float64) {
+		acc.balance += amount
+	}
+	var withdraw = func(acc *Account, amount float64) bool {
+		if amount > acc.balance {
+			return false
+		}
+		acc.balance -= amount
+		return true
+	}
+	var getBalance = func(acc *Account) float64 {
+		return acc.balance
+	}
+	account := createAccount("123456", 1000.0)
+	deposit(account, 500.0)
+	success := withdraw(account, 200.0)
+	if success {
+		println("Withdrawal successful")
+	}
+	balance := getBalance(account)
+	println("Current balance:", balance)
 }

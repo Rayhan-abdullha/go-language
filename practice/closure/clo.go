@@ -21,7 +21,6 @@ func Closure() {
 	f()
 	k()
 }
-
 func init() {
 	println("Init function in closure package")
 }
